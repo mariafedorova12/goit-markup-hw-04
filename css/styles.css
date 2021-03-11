@@ -63,6 +63,42 @@ img {
   overflow: hidden;
 }
 
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*========== SOCIAL LINKS ==========*/
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: var(--text-description-color);
+  width: 20px;
+  height: 20px;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--header-background-color);
+}
+
+/*========== END SOCIAL LINKS ==========*/
+
 /*========== CONTAINER ==========*/
 
 .container {
@@ -141,6 +177,34 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+/*========HEADER ICONS========*/
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  color: var(--text-description-color);
+}
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  color: var(--text-description-color);
+}
+.mailto-link:hover,
+.mailto-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+.tel-link:hover,
+.tel-link:focus {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+/*========END HEADER ICONS========*/
+
 .current {
   color: var(--accent-color);
 }
@@ -189,6 +253,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: var(--header-background-color);
 }
 
 .contact-list-item {
@@ -202,13 +267,23 @@ img {
 .hero-container {
   align-items: center;
   text-align: center;
-  max-width: 696px;
+  max-width: 1600px;
+  min-height: 600px;
   padding: 200px 0;
   margin: 0 auto;
 }
 
 .hero {
-  background-color: var(--footer-background-color);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero/hero.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-title {
@@ -283,6 +358,17 @@ img {
   line-height: 1.71;
   color: var(--text-description-color);
 }
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 100px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 25px;
+  max-width: 270px;
+  height: 120px;
+}
 /*======== END ABOUT ======== */
 
 /* ======= SERVICES ========= */
@@ -325,7 +411,8 @@ img {
   padding-bottom: var(--section-pb);
 }
 
-.crew-title {
+.crew-title,
+.clients-title {
   text-align: center;
   margin-bottom: 50px;
 }
@@ -371,12 +458,27 @@ img {
 }
 
 .crew-list-position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   color: var(--text-description-color);
 }
 
 /*======= END CREW ======*/
+
+/*=======REGULAR CLIENTS=======*/
+.clients .container {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+}
+
+.clients-list-link {
+}
 
 /*======= PORTFOLIO =======*/
 
