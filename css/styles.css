@@ -472,12 +472,19 @@ img {
   padding-bottom: var(--section-pb);
 }
 
-.clients-list {
+.clients-list-wrapper {
+  width: 170px;
+  height: 90px;
+  border: 1px solid;
+  border-color: #afb1b8;
+  border-radius: 4px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-
-.clients-list-link {
+.clients-list-item {
+  display: flex;
+  align-items: center;
 }
 
 /*======= PORTFOLIO =======*/
