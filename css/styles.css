@@ -246,8 +246,6 @@ img {
 /*============== FOOTER ==================*/
 
 .footer.container {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
   align-items: center;
 }
@@ -277,7 +275,6 @@ img {
 
 .social {
   padding-top: 72px;
-  padding-bottom: 97px;
   padding-bottom: 100px;
   margin-left: 70px;
 }
@@ -291,6 +288,41 @@ img {
   letter-spacing: 3%;
   fill: Solid;
   color: #ffffff;
+}
+/*rgba(255, 255, 255, 0.1);*/
+.footer-social-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list-link:hover,
+.footer-social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-list-icon {
+  fill: var(--button-hover-color);
+  width: 20px;
+  height: 20px;
+}
+
+.footer-social-list-link:hover .social-list-icon,
+.footer-social-list-link:focus .social-list-icon {
+  fill: var(--header-background-color);
 }
 
 /*============== END FOOTER ============*/
