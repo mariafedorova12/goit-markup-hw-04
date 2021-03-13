@@ -63,13 +63,12 @@ img {
   overflow: hidden;
 }
 
+/*========== SOCIAL LINKS ==========*/
 .social-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-/*========== SOCIAL LINKS ==========*/
 
 .social-list-link {
   display: flex;
@@ -182,19 +181,38 @@ img {
 .icon-envelope {
   margin-right: 10px;
   color: var(--text-description-color);
+  fill: var(--text-description-color);
 }
 .icon-smartphone {
   margin-right: 10px;
   color: var(--text-description-color);
+  fill: var(--text-description-color);
 }
 .mailto-link:hover,
 .mailto-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
+
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
+}
+.icon-envelope:hover,
+.icon-envelope:focus {
+  fill: var(--accent-color);
+}
+
+.icon-smartphone:hover,
+.icon-smartphone:focus {
+  fill: var(--accent-color);
+}
+.mailto-link:hover .icon-envelope,
+.mailto-link:focus .icon-envelope {
+  fill: var(--accent-color);
+}
+
+.tel-link:hover .icon-smartphone,
+.tel-link:focus .icon-smartphone {
   fill: var(--accent-color);
 }
 
@@ -259,6 +277,7 @@ img {
 
 .social {
   padding-top: 72px;
+  padding-bottom: 97px;
   padding-bottom: 100px;
   margin-left: 70px;
 }
@@ -519,6 +538,8 @@ img {
 .clients-list-link:focus .clients-list-icon {
   fill: var(--accent-color);
 }
+
+/*=======END REGULAR CLIENTS=======*/
 
 /*======= PORTFOLIO =======*/
 
