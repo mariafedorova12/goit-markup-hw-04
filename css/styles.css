@@ -259,7 +259,7 @@ img {
   background-color: var(--footer-background-color);
 }
 
-.Web {
+.web{
   margin-bottom: 20px;
 }
 
@@ -336,14 +336,12 @@ img {
 .hero-container {
   align-items: center;
   text-align: center;
-
-  padding: 200px 0;
-  margin: 0 auto;
 }
-
-.hero {
+.hero{
   max-width: 1600px;
   min-height: 600px;
+  padding: 200px 0;
+  margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
       rgba(47, 48, 58, 0.4),
@@ -355,6 +353,7 @@ img {
   background-size: cover;
   background-position: center;
 }
+
 
 .hero-title {
   text-align: center;
@@ -397,7 +396,8 @@ img {
 
 /*======= ABOUT ========= */
 
-.about .container {
+.about.container {
+  width:1200;
   padding-top: var(--section-pt);
   padding-bottom: 47px;
 }
@@ -429,16 +429,17 @@ img {
   color: var(--text-description-color);
 }
 .about-description {
-  background: #f5f4fa;
-  border-radius: 4px;
-  margin-bottom: 25px;
-  max-width: 270px;
-  height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
-.about-item {
-  padding: 25px 100px;
-}
+
 /*======== END ABOUT ======== */
 
 /* ======= SERVICES ========= */
